@@ -1,127 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Suraj | Live Caricature Artist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suraj | Caricature Artist</title>
+
 <style>
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #ffffff;
+        background: #f5f5f5;
         color: #222;
     }
-    header {
+
+    /* HERO */
+    .hero {
+        text-align: center;
         padding: 60px 20px;
-        text-align: center;
-        background: #fafafa;
+        background: white;
     }
-    h1 {
-        font-size: 32px;
+    .hero h1 {
+        font-size: 30px;
         margin-bottom: 10px;
+        font-weight: bold;
     }
-    h2 {
-        text-align: center;
-        margin-top: 60px;
-        font-size: 28px;
-    }
-    p {
-        line-height: 1.6;
+    .hero p {
         font-size: 16px;
+        margin-top: 0;
     }
-    .btn {
+    .hero .btn {
         display: inline-block;
-        margin-top: 20px;
         padding: 12px 25px;
         background: black;
-        color: #fff;
-        border-radius: 6px;
+        color: white;
+        border-radius: 5px;
         text-decoration: none;
+        margin-top: 20px;
         font-size: 16px;
     }
+
+    /* SECTION */
     .section {
-        padding: 40px 20px;
         max-width: 900px;
         margin: auto;
+        padding: 50px 20px;
+        background: white;
+        margin-top: 20px;
+        border-radius: 10px;
     }
-    .grid {
+    .section h2 {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .section p, .section li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    ul {
+        padding-left: 20px;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
         margin-top: 20px;
     }
-    .gallery img {
+    .gallery-grid img {
         width: 100%;
         border-radius: 10px;
-        transition: 0.3s;
+        background: #ddd;
+        height: 200px;
+        object-fit: cover;
     }
-    .gallery img:hover {
-        transform: scale(1.03);
-    }
+
+    /* TESTIMONIALS */
     .testimonial {
-        background: #f7f7f7;
+        background: #fafafa;
         padding: 20px;
         border-radius: 10px;
+        font-size: 15px;
     }
+
+    /* FOOTER */
     footer {
-        padding: 40px 20px;
         text-align: center;
-        background: #111;
-        color: #fff;
+        padding: 40px 20px;
+        background: black;
+        color: white;
+        margin-top: 30px;
+    }
+    footer .btn {
+        background: white;
+        color: black;
+        padding: 12px 25px;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 15px;
+        border-radius: 5px;
     }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Live Caricature Artist for Weddings & Events</h1>
-    <p>Fast, fun & memorable caricatures your guests will love.</p>
-    <a href="https://wa.me/your-number" class="btn">Book for Your Event</a>
-    <p>Available in Pune, Mumbai, Kolhapur, Satara & nearby cities.</p>
-</header>
-
-<section class="section">
-    <h2>About Me</h2>
-    <p>I’m Suraj, a caricature artist from Kolhapur with 7+ years of experience. I create quick, entertaining live caricatures that bring fun and excitement to weddings, corporate events, college fests, birthdays, and more.</p>
+<!-- HERO -->
+<section class="hero">
+    <h1>Live Caricature Artist for Weddings, Corporate Events & Parties</h1>
+    <p>Fast, fun and unique caricatures drawn live at your event.</p>
+    <a href="https://wa.me/your-number" class="btn">Book Now</a>
+    <p style="margin-top:15px;">Available in Pune • Mumbai • Kolhapur • Satara</p>
 </section>
 
-<section class="section">
+<!-- ABOUT -->
+<div class="section">
+    <h2>About Me</h2>
+    <p>I’m Suraj, a caricature artist from Kolhapur with over 7 years of experience. I draw quick, entertaining live caricatures that add fun and excitement to weddings, corporate events, college festivals, birthdays and more. 
+    Guests enjoy getting their portrait drawn — and they take home a memorable souvenir.</p>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
     <h2>Services</h2>
     <ul>
-        <li>Live Caricature at Events</li>
+        <li>Live Caricature Drawing at Events</li>
         <li>Digital Caricatures</li>
-        <li>Couple Caricatures</li>
+        <li>Couple Caricatures for Invitations</li>
     </ul>
-</section>
+</div>
 
-<section class="section gallery">
-    <h2>My Work</h2>
-    <div class="grid">
-        <img src="your-image1.jpg" />
-        <img src="your-image2.jpg" />
-        <img src="your-image3.jpg" />
-        <img src="your-image4.jpg" />
-        <img src="your-image5.jpg" />
-        <img src="your-image6.jpg" />
+<!-- PORTFOLIO -->
+<div class="section">
+    <h2>Portfolio</h2>
+    <div class="gallery-grid">
+        <img src="your-image1.jpg">
+        <img src="your-image2.jpg">
+        <img src="your-image3.jpg">
+        <img src="your-image4.jpg">
+        <img src="your-image5.jpg">
+        <img src="your-image6.jpg">
     </div>
-</section>
+</div>
 
-<section class="section">
+<!-- TESTIMONIALS -->
+<div class="section">
     <h2>Testimonials</h2>
-    <div class="grid">
-        <div class="testimonial">“Suraj was the star of our wedding! Every guest loved their caricature.”</div>
-        <div class="testimonial">“Perfect for our corporate meet. Professional and super fun!”</div>
-        <div class="testimonial">“Guests kept lining up. Totally worth it!”</div>
-    </div>
-</section>
-
-<footer>
-    <h2>Book for Your Event</h2>
-    <p>Message me to check availability & pricing.</p>
-    <a href="https://wa.me/your-number" class="btn">Chat on WhatsApp</a>
-    <p>Call: +91 XXXXXXXX</p>
-</footer>
-
-</body>
-</html>
+    <div class="gallery-grid">
+        <div class="testimonial">“Suraj was the highlight of our wedding — guests loved it!”</div>
